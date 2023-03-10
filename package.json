@@ -1,0 +1,11 @@
+{
+  "name": "moovies",
+  "version": "0.0.1",
+  "workspaces": [
+    "app/*",
+    "lib/*"
+  ],
+  "scripts": {
+    "start": "node ./app/index.js"
+  }
+}

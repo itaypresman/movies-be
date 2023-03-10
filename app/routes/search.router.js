@@ -6,7 +6,7 @@ const validator = require('../middlewares/validator.middleware.js');
 
 
 router.get('/search',
-    query(['title']).isString().withMessage('title can not be empty').isLength({ min: 3 }).withMessage('Min lengtyh is 3'),
+    query(['title']).isString().withMessage('title can not be empty').isLength({ min: 3 }).withMessage('Min length is 3'),
     validator,
     SearchController.search
 );

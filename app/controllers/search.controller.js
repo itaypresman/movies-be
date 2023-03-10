@@ -1,4 +1,4 @@
-const OimDbManager = require('../ managers/oimdb.manager.js');
+const OimDbManager = require('../ managers/search.manager.js');
 
 
 const search = async (req, res, next) => {

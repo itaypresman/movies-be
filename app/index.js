@@ -1,12 +1,12 @@
 const Config = require('@moovies/config');
 const express = require('express');
-const { searchApi } = require('./routes/index.js');
+const { oimdbApi } = require('./routes/index.js');
 const ErrorMiddleware = require('./middlewares/error.middleware.js');
 
 
 const app = express();
 
-app.use('/search', searchApi);
+app.use('/oimdb', oimdbApi);
 app.use(ErrorMiddleware);
 
 

@@ -1,3 +1,3 @@
 module.exports = {
-    searchApi: require('./search.router.js'),
+    oimdbApi: require('./search.router.js'),
 };

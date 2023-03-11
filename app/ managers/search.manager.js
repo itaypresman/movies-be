@@ -7,7 +7,7 @@ const getFilmFullInfo = id => geFilmInfoFromCache(id) || geFilmInfoFromOinDb(id)
 
 const geFilmsFromOinDb = async title => {
     const response = await OimDbApi.get('/', { params: { s: title }});
-    const films = response?.data;
+    const films = response?.data?.Search;
     Cache.searches.set(title.toLowerCase(), films);
 
     return films;
